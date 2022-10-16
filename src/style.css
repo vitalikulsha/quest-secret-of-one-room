@@ -1,0 +1,103 @@
+:root {
+  --width-wrapper: 640px;
+  /* --font-family-text: 'Rubik Dirt', cursive; */
+  /* --font-family-text: 'Rubik Glitch', cursive; */
+  --font-family-text: 'Comforter Brush', cursive;
+  --font-family-header: 'Rubik Wet Paint', cursive;
+  --color-text: #cc1100;
+  --color-text-extra: #cc1100;
+}
+
+/* BASE */
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-text);
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  scroll-behavior: smooth;
+  color: #f2f3f4;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: var(--font-family-header);
+  font-size: 3.0rem;
+  line-height: 120%;
+  margin: 0;
+  color: var(--color-text);
+  padding: 20px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* WRAPPER */
+.wrapper {
+  max-width: var(--width-wrapper);
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+.header {
+  background: black;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  background-image: url('../assets/image/logo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 47.55px;
+  height: 71.4px;
+  padding: 10px 0;
+}
+
+.nav {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  color: var(--color-text);
+  font-family: var(--font-family-header);
+  font-size: 1.6rem;
+}
+
+.nav__link:visited {
+  color: var(--color-text);
+}
+
+/* ROOM 1 */
+#room-1 {
+  background-image: url('../assets/image/room-1.jpg');
+}
+
+.task {
+  color: var(--color-text);
+  font-family: var(--font-family-header);
+}
