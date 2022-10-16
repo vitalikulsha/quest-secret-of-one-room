@@ -27,6 +27,7 @@ body {
 
 p {
   margin: 0;
+  letter-spacing: 2.5px;
 }
 
 a {
@@ -92,9 +93,18 @@ h1 {
   color: var(--color-text);
 }
 
-/* ROOM 1 */
+/* ROOMS */
+.room {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #room-1 {
   background-image: url('../assets/image/room-1.jpg');
+}
+
+#room-2 {
+  background-image: url('../assets/image/room-2.jpg');
 }
 
 .task {
