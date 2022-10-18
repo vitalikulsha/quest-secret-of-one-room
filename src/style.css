@@ -55,6 +55,13 @@ h2 {
   text-align: center;
 }
 
+hr{
+	width: 100%;
+	border-color: red;
+	box-shadow: 0 0 10px red;
+	margin-bottom: 20px;
+}
+
 .hidden {
   display: none;
 }
@@ -65,11 +72,14 @@ h2 {
   margin: 0 auto;
   position: relative;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 /* HEADER */
+.footer,
 .header {
   background: black;
+  box-shadow: 0 0 10px red;
 }
 
 .logo {
@@ -121,11 +131,10 @@ h2 {
   z-index: 5;
 }
 
-.disp-msg {
+.alert{
   position: fixed;
   width: 300px;
   height: 200px;
-  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,11 +148,11 @@ h2 {
   transition: all 0.5s ease-in-out;
 }
 
-.disp-msg.active {
+.alert.active {
   left: calc(50% - 150px);
 }
 
-.alert {
+.alert__msg {
   font-family: var(--font-family-text-add);
   color: var(--color-text-add);
   font-size: 2.0rem;
@@ -151,10 +160,42 @@ h2 {
   text-align: center;
 }
 
+.foto-msg{
+  position: fixed;
+  width: 90%;
+  height: 90%;
+  left: -100%;
+  top: 5%;
+  z-index: 10;
+  background-image: url('../assets/image/alert-background.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+
+.foto-msg.active{
+	left: 5%;
+}
+
+.foto-msg__close{
+  width: 30px;
+  height: 30px;
+  background-image: url('../assets/image/close-icon.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer
+}
+
 /* ROOMS */
 .room {
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0 0 10px red;
 }
 
 #room-1 {
@@ -165,9 +206,17 @@ h2 {
   background-image: url('../assets/image/room-2.jpg');
 }
 
+#room-3 {
+  background-image: url('../assets/image/room-3.jpg');
+}
+
+
 .stage {
   padding: 10px 0;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .task {
@@ -191,6 +240,8 @@ h2 {
   align-items: center;
   gap: 10px;
   margin: 10px auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .answer__input {
@@ -255,6 +306,11 @@ h2 {
   background-color: red;
 }
 
+.btn_play,
+.btn_msg {
+  background-color: #6495ed;
+}
+
 .btn_answer:hover {
   background-color: #00cc00;
   box-shadow: 0 0 10px #00cc00;
@@ -270,12 +326,17 @@ h2 {
   box-shadow: 0 0 10px #ff033e;
 }
 
+.btn_play:hover,
+.btn_msg:hover {
+  background-color: #abcdef;
+  box-shadow: 0 0 10px #abcdef;
+}
+
 .btn:disabled {
   background-color: gray;
   box-shadow: none;
   cursor: auto;
 }
-
 
 .help {
   width: 100%;
@@ -303,5 +364,13 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
   box-sizing: border-box;
-  padding: 5px 0;
+  padding: 10px 0;
+  box-shadow: 0 0 10px red;
+}
+
+.video{
+	width: 90%;
+	border: solid 2px red;
+	border-radius: 10px;
+	margin: 0 auto;
 }

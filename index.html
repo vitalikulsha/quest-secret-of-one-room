@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./assets/image/fav-icon.png" rel="shortcut icon">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link
@@ -16,6 +17,13 @@
 
 	<body>
 		<div class="overlay"></div>
+		<div class="alert">
+			<p class="alert__msg">Неправильно! Подумай еще или воспользуйся подсказкой.</p>
+			<button class="btn btn_alert">Закрыть</button>
+		</div>
+		<div class="foto-msg">
+			<div class="foto-msg__close"></div>
+		</div>
 		<header class="header">
 			<div class="wrapper">
 				<ul class="nav">
@@ -27,41 +35,22 @@
 			</div>
 		</header>
 		<main class="main">
-			<div class="disp-msg">
-				<p class="alert">Неправильно! Подумай еще или воспользуйся подсказкой.</p>
-				<button class="btn btn_alert">Закрыть</button>
-			</div>
 			<section id="room-1" class="room">
 				<div class="wrapper">
 					<h1>Комната 1</h1>
 					<div class="stage">
 						<p class="story">
-							На этом месте при загадочных обстоятельствах был убит мужчина.
-							Когда тело обнаружили, его уже не возможно было опознать.
+							В 1890 году на этом месте при загажочных обстоятельствах был убит мужчина. 
+							Через 2 года тело обнаружили, его уже не возможно было опознать.
 							Следствие зашло в тупик и дело, спустя годы, затерялось в архиве.
+							Через 120 лет здание архива было принято решение снести.
 						</p class="story">
-						<p class="task"><span class="task__title">Задание: </span>Найти архив.</p>
-						<div class="answer">
-							<input class="answer__input" name="answer" type="text" min="1"
-								placeholder="Введите ответ">
-							<div class="btn-box">
-								<button class="btn btn_help">Подсказка</button>
-								<button class="btn btn_answer">Отправить</button>
-							</div>
-						</div>
-						<ul class="help"></ul>
-					</div>
-					<div class="stage">
-						<hr>
-						<p>
-							Через 120 лет здание следственного комитета было принято решение снести.
-							Молодой капитан, перебирая дела, наткнулся на это дело, где была надпись
-							"Жестокая расправа".
+						<p class="task">
+							<span class="task__title">Задание: </span>Найти архив.
 						</p>
-						<p class="task"><span class="task__title">Задание: </span>Найти дело.</p>
 						<div class="answer">
 							<input class="answer__input" name="answer" type="text" min="1"
-								placeholder="Введите ответ">
+								placeholder="Введите числовой код">
 							<div class="btn-box">
 								<button class="btn btn_help">Подсказка</button>
 								<button class="btn btn_answer">Отправить</button>
@@ -72,14 +61,15 @@
 					<div class="stage">
 						<hr>
 						<p class="story">
-							Капитана оно очень заинтересовало. Хотя дело подлежало утилизации,
-							капитан решил принять вызов и разгадать это дело<br>
+							Молодой капитан, перебирая дела, наткнулся на одно дело, где был написан код:<br>
+							<span class="help__title">8-6-19-20-16-12-16-6/21-2-10-11-19-20-3-16</span>
 						</p>
-						<p class="task"><span class="task__title">Задание: </span>Узнать личность
-							убитого.</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Расшифровать код и найти дело.
+						</p>
 						<div class="answer">
 							<input class="answer__input" name="answer" type="text" min="1"
-								placeholder="Введите ответ">
+								placeholder="Расшифруйте и введите название дела">
 							<div class="btn-box">
 								<button class="btn btn_help">Подсказка</button>
 								<button class="btn btn_answer">Отправить</button>
@@ -90,13 +80,107 @@
 					<div class="stage">
 						<hr>
 						<p class="story">
-							Убитый оказался доктором, который работал в больнице.
+							Капитана оно очень заинтересовало.
+							Хоть дело и подлежало утилизации, капитан решил его разгадать.
+							Он отправился на место, где было обнаружено тело, но по дороге заблудился,
+							так как спустя годы местность совсем изменилась.
+							Капитан хотел уже развернуться и ехать домой, как вдруг на него налетела стая ворон.
+							Убегая от стаи он забежал в старое здание, где решил дождаться утра.
+							Капитан оглянулся вокруг и увидел лоскут точно такой же, который был в деле.
 						</p>
-						<p class="task"><span class="task__title">Задание: </span>Найти блокнот с
-							записями.</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Найти первый предмет и написать код.
+						</p>
 						<div class="answer">
 							<input class="answer__input" name="answer" type="text" min="1"
-								placeholder="Введите ответ">
+								placeholder="Введите код">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<div class="stage">
+						<hr>
+						<p class="story">
+							"Как это может быть связано с убитым?!" - подумал капитан.
+							Капитан заметил подозрительную коробку цвета шмальта.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Найти второй предмет и написать код.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Введите код">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Грянул гром и сверкнула молния, капитан заметил еще одну коробку.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Найти и написать код.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Введите код">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<div class="stage">
+						<hr>
+						<p class="story">
+							То, что он находился в комнате убитого, у капитана не вызывало сомнения.
+							Найденные предметы ставили его в тупик. "Кем же был убитый?". 
+							Один из предметов напомнил ему о голоде.
+							Капитан вдруг вспомнил, что ничего не ел с утра.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>Какой предмет?.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Введите название предмета">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Но он быстро забыл об этом, когда услышал странный голос.
+						</p>
+						<button class="btn btn_play">Голос</button>
+						<p class="story">
+							Капитану стало жутко и он решил покинуть это здание.
+							Но дверь оказалась заперта с наружи, а на телефон пришло сообщение с изображением.
+						</p>
+						<button class="btn btn_msg">Сообщение</button>
+						<p class="story">
+							Капитан понимал, что дело нужно довести до конца, а иначе он отсуда не выйдет.
+							На стене он заметил странные часы, которые указывали ему на что-то.
+						</p>
+						<p class="task">
+							<span class="task__title">Задание: </span>
+							Найти оставшиеся предметы и написать кем был убитый?
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Введите профессию убитого">
 							<div class="btn-box">
 								<button class="btn btn_help">Подсказка</button>
 								<button class="btn btn_answer">Отправить</button>
@@ -112,33 +196,62 @@
 			<section id="room-2" class="room">
 				<div class="wrapper">
 					<h1>Комната 2</h1>
-					<p>
-						Капитан нашел все улики: он был психиатром, который похищал больных из
-						больницы
-						и отвозил к себе в загородный дом, где ставил опыты и эксперемнтировал на
-						больными.<br>
-					</p>
-					<p>
-						Люк был шизофреником, считал себя человеком-пауком, его доктор прибил
-						гвоздями к потолку.<br>
-						Мэри страдала истерией, её доктор насиловал.<br>
-						Люси страдала пищевым растройством и ёё доктор насильно кормил.<br>
-						Бил был умственно отсталым, его доктор лечил с помощью тока.<br>
-						Антонио был симулянтом, который хотел узнать, куда пропала его невеста
-						Мэри.
-						Он косил, показывая все, что угодно, лишь бы попасть в больницу: то
-						смеялся, то плакал,
-						то изображал курицу, предварительно пряча себе в задний проход яйцо.
-						В загародный дом докторы он попал случайно.
-					</p>
+					<div class="stage">
+						<p class="story">
+							Капитан увидел тела людей, умерших странным образом.
+							"Кто эти люди? И что с ними произошло?".
+							Он заприметил сундук и начал искать ключи.
+						</p class="story">
+						<video class="video" src="./assets/video/video.mp4" controls></video>
+						<p class="task">
+							<span class="task__title">Задание: </span>
+							Посмотреть видео и написать что на нем.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Что на видео?">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
+					<div class="stage">
+						<hr>
+						<p class="story">
+							Открыв сундук он обнаружил 5 закрытых коробок, в которых были отверстия.
+							В каждой коробке он по порядку находил предметы.
+							Обмыв водой выложил их по порядку.
+							Что-то тут не так....
+							Вдруг он вспомнил, что в комнате врача стоял комод и капитан решил вернуться туда.
+							Там он нашел блокнот с записями и код.....
+						</p class="story">
+						<p class="task">
+							<span class="task__title">Задание: </span>Найти код и написать его.
+						</p>
+						<div class="answer">
+							<input class="answer__input" name="answer" type="text" min="1"
+								placeholder="Напишите код">
+							<div class="btn-box">
+								<button class="btn btn_help">Подсказка</button>
+								<button class="btn btn_answer">Отправить</button>
+							</div>
+						</div>
+						<ul class="help"></ul>
+					</div>
 				</div>
 			</section>
 			<div class="separator">
 				<h2>Черепаха-клаустрофоб живёт в ужасе.</h2>
 			</div>
-			<section id="room-3" class="room"></section>
+			<section id="room-3" class="room">
+				<div class="wrapper">
+					<h1>Комната 3</h1>
+				</div>
+			</section>
 		</main>
-		<header class="header">
+		<footer class="footer">
 			<div class="wrapper">
 				<ul class="nav">
 					<li class="logo"></li>
