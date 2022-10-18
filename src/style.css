@@ -1,7 +1,6 @@
 :root {
   --width-wrapper: 640px;
-  /* --font-family-text: 'Rubik Dirt', cursive; */
-  --font-family-text: 'Comforter Brush', cursive;
+  --font-family-text: 'Lobster', cursive;
   --font-family-text-add: 'Rubik Glitch', cursive;
   --font-family-header: 'Rubik Wet Paint', cursive;
   --color-text: #cc1100;
@@ -99,8 +98,12 @@ hr {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+}
+
+.nav>li {
+  text-align: center;
 }
 
 .nav__link {
@@ -210,7 +213,6 @@ hr {
   background-image: url('../assets/image/room-3.jpg');
 }
 
-
 .stage {
   padding: 10px 0;
   box-sizing: border-box;
@@ -219,18 +221,23 @@ hr {
   align-items: center;
 }
 
+.story {
+  margin: 0 10px;
+}
+
 .task {
+  font-size: 2.0rem;
   font-family: var(--font-family-text-add);
   letter-spacing: 3px;
   text-align: center;
   margin-top: 10px;
+  text-shadow: 0 0 10px black;
 }
 
 .task__title {
   color: var(--color-text);
   font-family: var(--font-family-text-add);
   letter-spacing: 3px;
-  text-shadow: 2px 2px 1px black;
 }
 
 .answer {
@@ -253,13 +260,13 @@ hr {
 
 .answer__input::placeholder {
   font-family: var(--font-family-text);
-  font-size: 2.4rem;
+  font-size: 2.0rem;
   text-transform: none;
 }
 
 .answer__input[type=text] {
   font-family: var(--font-family-text-add);
-  font-size: 2.4rem;
+  font-size: 2.0rem;
   color: var(--color-text);
   padding-left: 10px;
   letter-spacing: 5px;
@@ -346,6 +353,11 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.help__text {
+  font-size: 1.8rem;
+  margin: 0 10px;
 }
 
 .help__title {
