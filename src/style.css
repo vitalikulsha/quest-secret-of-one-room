@@ -55,11 +55,11 @@ h2 {
   text-align: center;
 }
 
-hr{
-	width: 100%;
-	border-color: red;
-	box-shadow: 0 0 10px red;
-	margin-bottom: 20px;
+hr {
+  width: 100%;
+  border-color: red;
+  box-shadow: 0 0 10px red;
+  margin-bottom: 20px;
 }
 
 .hidden {
@@ -131,7 +131,7 @@ hr{
   z-index: 5;
 }
 
-.alert{
+.alert {
   position: fixed;
   width: 300px;
   height: 200px;
@@ -160,7 +160,7 @@ hr{
   text-align: center;
 }
 
-.foto-msg{
+.foto-msg {
   position: fixed;
   width: 90%;
   height: 90%;
@@ -174,11 +174,11 @@ hr{
   transition: all 0.5s ease-in-out;
 }
 
-.foto-msg.active{
-	left: 5%;
+.foto-msg.active {
+  left: 5%;
 }
 
-.foto-msg__close{
+.foto-msg__close {
   width: 30px;
   height: 30px;
   background-image: url('../assets/image/close-icon.png');
@@ -368,9 +368,9 @@ hr{
   box-shadow: 0 0 10px red;
 }
 
-.video{
-	width: 90%;
-	border: solid 2px red;
-	border-radius: 10px;
-	margin: 0 auto;
+.video {
+  width: 90%;
+  border: solid 2px red;
+  border-radius: 10px;
+  margin: 0 auto;
 }

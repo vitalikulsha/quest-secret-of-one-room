@@ -124,12 +124,12 @@ function updateStages() {
 		let hint = createHint(localStorage.stateNum - 1, i);
 		addHint(stages[localStorage.stateNum - 1], hint);
 	}
-	
+
 	for (let i = localStorage.stateNum; i < stages.length; i++) {
 		//stages[i].classList.add('hidden');
 		stages[i].style.display = 'none';
 	}
-	
+
 	stages[localStorage.stateNum - 1].querySelector('.btn_help').disabled = true;
 	setTimeout(() => stages[localStorage.stateNum - 1].querySelector('.btn_help').disabled = false, TIME_OUT);
 }
@@ -191,7 +191,7 @@ function changeState(stage) {
 }
 
 //генерирует сообщение в модальном окне
-function generatorMessage(msg){
+function generatorMessage(msg) {
 	alertMsg.textContent = msg;
 }
 
@@ -224,7 +224,7 @@ document.querySelector('.logo').addEventListener('click', function () {
 btnAlert.addEventListener('click', toggleAlert);
 
 //проиграть аудио
-function playAudio(){
+function playAudio() {
 	audio.src = '../assets/audio/voice.mp3';
 	audio.play();
 }
