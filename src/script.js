@@ -318,8 +318,10 @@ function toggleRooms() {
 	const separators = document.querySelectorAll('.separator');
 	if (localStorage.stateNum >= 10) {
 		rooms[1].classList.remove('hidden');
+		separators[1].classList.remove('hidden');
 	} else {
-		rooms[2].classList.add('hidden');
+		rooms[1].classList.add('hidden');
+		separators[1].classList.add('hidden');
 	}
 	if (localStorage.stateNum >= 25) {
 		stories[0].classList.remove('hidden');
