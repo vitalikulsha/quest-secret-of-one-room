@@ -202,6 +202,7 @@ hr {
   box-shadow: 0 0 10px red;
 }
 
+#room-4,
 #room-1 {
   background-image: url('../assets/image/room-1.jpg');
 }
@@ -224,6 +225,11 @@ hr {
 
 .story {
   margin: 0 10px;
+}
+
+.last-story {
+  padding-bottom: 20px;
+  box-sizing: border-box;
 }
 
 .task {

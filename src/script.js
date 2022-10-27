@@ -78,28 +78,63 @@ const state = [
 	},
 	{
 		id: 11,
-		name: 'stage2-02',
+		name: 'stage2-02.1',
+		answer: ['ПЕРЧАТКИ', 'ПЕРЧАТКА'],
+		message: "Предмет №1 - это ПЕРЧАТКИ.",
+		hints: []
+	},
+	{
+		id: 12,
+		name: 'stage2-02.2',
+		answer: ['ОРЕХИ', 'ОРЕХ'],
+		message: "Предмет №2 - это ОРЕХ.",
+		hints: []
+	},
+	{
+		id: 13,
+		name: 'stage2-02.3',
+		answer: ['ПАУК'],
+		message: "Предмет №3 - это ПАУК.",
+		hints: []
+	},
+	{
+		id: 14,
+		name: 'stage2-02.4',
+		answer: ['ВИЛКА'],
+		message: "Предмет №4 - это ВИЛКА.",
+		hints: []
+	},
+	{
+		id: 15,
+		name: 'stage2-02.5',
+		answer: ['ЯЙЦО'],
+		message: "Предмет №5 - это ЯЙЦО.",
+		hints: []
+	},
+	{
+		id: 16,
+		name: 'stage2-03',
 		answer: ['ИСТЕРИЯ', 'ИСТЕРИЧКА', 'ИСТЕРИКА'],
 		message: "Все верно! Это ИСТЕРИЯ.",
 		hints: []
 	},
 	{
-		id: 12,
-		name: 'stage2-03',
+		id: 17,
+		name: 'stage2-04',
 		answer: ['МАССАЖ МАТКИ', 'МАТКИ МАССАЖ', 'МАССАЖЕМ МАТКИ'],
 		message: "Все верно! Истерию доктор лечил через массаж матки.",
 		hints: []
 	},
 	{
-		id: 13,
-		name: 'stage2-04',
+		id: 18,
+		name: 'stage2-05',
 		answer: ['ОЛИГОФРЕНИЯ', 'ОЛИГОФРЕН', 'ОЛИГОФРЕНИК'],
 		message: "Все верно! Это ОЛИГОФРЕНИЯ.",
 		hints: []
 	},
 	{
-		id: 14,
-		name: 'stage2-05',
+		id: 19,
+		name: 'stage2-06',
 		answer: [
 			'ЭЛЕКТРИЧЕСКОГО СТУЛА',
 			'ЭЛЕКТРИЧЕСКИЙ СТУЛ',
@@ -112,8 +147,8 @@ const state = [
 		hints: []
 	},
 	{
-		id: 15,
-		name: 'stage2-06',
+		id: 20,
+		name: 'stage2-07',
 		answer: [
 			'ЧЕЛОВЕК-ПАУК',
 			'ЧЕЛОВЕК ПАУК',
@@ -127,8 +162,8 @@ const state = [
 		]
 	},
 	{
-		id: 16,
-		name: 'stage2-07',
+		id: 21,
+		name: 'stage2-08',
 		answer: [
 			'ПРИБИЛ К ПОТОЛКУ',
 			'ПРИБИЛ ГВОЗДЯМИ К ПОТОЛКУ',
@@ -139,15 +174,15 @@ const state = [
 		hints: []
 	},
 	{
-		id: 17,
-		name: 'stage2-08',
+		id: 22,
+		name: 'stage2-09',
 		answer: ['АНОРЕКСИЯ', 'АНОРЕКСИЧКА', 'АНОРЕКСИК'],
 		message: "Все верно! Это АНОРЕКСИЯ.",
 		hints: ['Симптомы: потеря аппетита, дефицит массы тела']
 	},
 	{
-		id: 18,
-		name: 'stage2-09',
+		id: 23,
+		name: 'stage2-10',
 		answer: [
 			'ОТ ОБЕЗВОЖИВАНИЯ',
 			'ОБЕЗВОЖИВАНИЯ',
@@ -160,76 +195,66 @@ const state = [
 		hints: []
 	},
 	{
-		id: 19,
-		name: 'stage2-10',
+		id: 24,
+		name: 'stage2-11',
 		answer: ['ЛЮСИ'],
 		message: "Все верно! Это Люси",
 		hints: []
 	},
 	{
-		id: 20,
-		name: 'stage2-11',
-		answer: ['АНТОНИО'],
-		message: "Теперь всё становилось на свои места: Антонио был также пациентом доктора, которого он возможно также лечил.",
-		hints: []
-	},
-	{
-		id: 21,
-		name: 'stage3-01',
-		answer: ['СИМУЛЯНТ'],
-		message: "Все верно! Это СИМУЛЯНТ.",
-		hints: []
-	},
-	{
-		id: 22,
-		name: 'stage3-02',
-		answer: ['АНТОНИО СИМУЛЯНТ'],
-		message: "Все верно, Антонио - симулянт",
-		hints: []
-	},
-	{
-		id: 23,
-		name: 'stage3-03',
-		answer: [
-			'ОН НЕ ТОТ ЗА КОГО СЕБЯ ВЫДАЕТ',
-			'ОН НЕ ТОТ ЗА КОГО СЕБЯ ВЫДАЁТ',
-		],
-		message: "Все верно, Антонио не тот за кого себя выдает!",
-		hints: []
-	},
-	{
-		id: 24,
-		name: 'stage3-04',
-		answer: ['ЛЮСИ'],
-		message: "Все именно так, это была Люси!",
-		hints: []
-	},
-	{
 		id: 25,
-		name: 'stage3-05',
-		answer: ['АНТОНИО ВЫДАВАЛ СЕБЯ ЗА ДОКТОРА АЛАНА'],
-		message: "Все верно! Антонио выдавал себя за доктора Алана.",
+		name: 'stage3-01',
+		answer: ['АНТОНИО'],
+		message: "Все верно!",
 		hints: []
 	},
 	{
 		id: 26,
-		name: 'stage3-06',
-		answer: ['АЛАН НЕ ВИНОВЕН'],
-		message: "Все верно! Алан не виновен.",
+		name: 'stage3-02',
+		answer: ['СИМУЛЯНТ'],
+		message: "Все верно! Ищи птиц с посланиями.",
 		hints: []
 	},
 	{
 		id: 27,
-		name: 'stage3-07',
-		answer: ['АНТОНИО'],
-		message: "Все верно! Погибшего звали Антонио.",
+		name: 'stage3-03',
+		answer: ['ПОМОГИТЕ'],
+		message: "Все верно, ищите нужные бутылки.",
 		hints: []
 	},
 	{
 		id: 28,
+		name: 'stage3-04',
+		answer: ['1834'],
+		message: "Все верно, ищите второе яйцо.",
+		hints: []
+	},
+	{
+		id: 29,
+		name: 'stage3-05',
+		answer: ['56'],
+		message: "Все верно!",
+		hints: []
+	},
+	{
+		id: 30,
+		name: 'stage3-06',
+		answer: ['КОНЕЦ'],
+		message: "Все верно!",
+		hints: []
+	},
+	{
+		id: 31,
+		name: 'stage3-07',
+		answer: ['ДОКТОРА АЛАНА', 'ДОКТОР АЛАН', 'АЛАНА', 'АЛАН'],
+		message: "Все верно! Это тело доктора Алана.",
+		hints: []
+	},
+	{
+		id: 32,
 		name: 'stage3-08',
-		answer: ['1'],
-		message: "Детектив, налив себе содержимое из этого сосуда, почувствовал облегчение, неужели дело считать закрытым? И все вокруг сказали 'ДААА!'",
+		answer: ['29'],
+		message: "Все верно!",
 		hints: []
 	}
 ];
@@ -247,12 +272,12 @@ const btnClose = document.querySelector('.foto-msg__close');
 const audio = new Audio();
 
 const HELP_TITLE = '<span class="help__title">Подсказка: </span><br>';
-const TIME_OUT = 5000;
+const TIME_OUT = 120000;
 
 //инициализация параметров
 function init() {
 	localStorage.stateNum = localStorage.stateNum || 1;
-	localStorage.hintNum = localStorage.hintNum || 0;
+	localStorage.hintNum = 0;
 }
 init();
 
@@ -279,11 +304,45 @@ function updateStages() {
 			stages[i].querySelector('.btn_help').style.display = 'none';
 		}
 	}
-
+	if (+localStorage.stateNum === state.length + 1) return;
 	stages[localStorage.stateNum - 1].querySelector('.btn_help').disabled = true;
+	toggleRooms();
 	setTimeout(() => stages[localStorage.stateNum - 1].querySelector('.btn_help').disabled = false, TIME_OUT);
 }
 updateStages();
+
+//Открываем новые блоки в секциях
+function toggleRooms() {
+	const rooms = document.querySelectorAll('.room');
+	const stories = document.querySelectorAll('.last-story');
+	const separators = document.querySelectorAll('.separator');
+	if (localStorage.stateNum >= 10) {
+		rooms[1].classList.remove('hidden');
+	} else {
+		rooms[2].classList.add('hidden');
+	}
+	if (localStorage.stateNum >= 25) {
+		stories[0].classList.remove('hidden');
+		rooms[2].classList.remove('hidden');
+		separators[2].classList.remove('hidden');
+	} else {
+		stories[0].classList.add('hidden');
+		rooms[2].classList.add('hidden');
+		separators[2].classList.add('hidden');
+	}
+	if (localStorage.stateNum >= 32) {
+		stories[1].classList.remove('hidden');
+		rooms[3].classList.remove('hidden');
+	} else {
+		stories[1].classList.add('hidden');
+		rooms[3].classList.add('hidden');
+	}
+	if (localStorage.stateNum >= 33) {
+		stories[2].classList.remove('hidden');
+	} else {
+		stories[2].classList.add('hidden');
+	}
+}
 
 //создает подсказку в теге li
 function createHint(stateNum, hintNum) {
@@ -332,6 +391,7 @@ function changeState(stage) {
 	stage.querySelector('.btn_help').disabled = true;
 	stage.querySelector('.btn_answer').disabled = true;
 	stage.querySelector('.answer__input').disabled = true;
+	if (+localStorage.stateNum === state.length + 1) return;
 	if (localStorage.stateNum - 1 < stages.length) {
 		stages[localStorage.stateNum - 1].style.display = 'flex';
 		stages[localStorage.stateNum - 1].querySelector('.btn_help').disabled = true;
@@ -355,6 +415,7 @@ for (let stage of stages) {
 	stage.querySelector('.btn_answer').addEventListener('click', function () {
 		if (checkAnswer(stage)) {
 			changeState(stage);
+			toggleRooms();
 		} else {
 			generatorMessage('Неправильно! Подумай еще или воспользуйся подсказкой.');
 		};
@@ -372,14 +433,19 @@ document.querySelector('.logo').addEventListener('click', function () {
 //закрытие предупреждающего сообщения
 btnAlert.addEventListener('click', toggleAlert);
 
+let isPlay = false;
+
 //проиграть аудио
 function playAudio() {
 	audio.src = '../assets/audio/voice.mp3';
-	audio.play();
+	isPlay ? audio.play() : audio.pause();
 }
 
 //запуск звука
-btnPlay.addEventListener('click', playAudio);
+btnPlay.addEventListener('click', function () {
+	isPlay = !isPlay;
+	playAudio();
+});
 
 //переключения всплывающего сообщения
 function toggleFotoMsg() {
